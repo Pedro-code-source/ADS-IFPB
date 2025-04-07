@@ -1,0 +1,38 @@
+.paneOpcoes {
+    -fx-border-radius: 20px; /* Define a borda arredondada */
+    -fx-border-style: solid;
+    -fx-border-color: red;
+    -fx-background-radius: 20px; /* Garante que o fundo também siga a borda arredondada */
+}
+
+#buttonHamb, #buttonBebida, #buttonPizza, #buttonPastel {
+    -fx-background-color: transparent; /* Remove o fundo */
+}
+
+#paneSmashBurguer, #paneSmashSalada, #paneSmashBacon, #paneCalabresa, #paneFrango, #panePepperoni {
+    -fx-border-radius: 40px; /* Define a borda arredondada */
+    -fx-border-style: solid;
+    -fx-border-color: gray;
+    -fx-background-radius: 20px; /* Garante que o fundo também siga a borda arredondada */
+}
+
+#panePastelFrango, #panePastelCarne, #panePastelAlgumaCoisa, #panePastel4 {
+    -fx-border-radius: 40px; /* Define a borda arredondada */
+    -fx-border-style: solid;
+    -fx-border-color: gray;
+    -fx-background-radius: 20px; /* Garante que o fundo também siga a borda arredondada */
+}
+
+#paneBebidas1, #paneBebidas2 {
+    -fx-border-radius: 40px; /* Define a borda arredondada */
+    -fx-border-style: solid;
+    -fx-border-color: gray;
+    -fx-background-radius: 20px; /* Garante que o fundo também siga a borda arredondada */
+}
+
+#paneOp1, #paneOp2, #paneOp3, #paneOp4, #paneOp5, #paneOp6 {
+    -fx-border-radius: 40px; /* Define a borda arredondada */
+    -fx-border-style: solid;
+    -fx-border-color: gray;
+    -fx-background-radius: 20px; /* Garante que o fundo também siga a borda arredondada */
+}
