@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="1350.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaInicialController">
+    <children>
+        <ScrollPane fx:id="scrollPane" fitToWidth="true" prefHeight="1300.0" prefWidth="615.0" VBox.vgrow="ALWAYS">
+            <VBox fx:id="vBoxGeral" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+                <children>
+                    <HBox fx:id="hBoxCardapio" prefHeight="100.0" prefWidth="600.0">
+                        <children>
+                            <Pane prefHeight="100.0" prefWidth="600.0">
+                                <children>
+                                    <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="187.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@imagensInicial/imagemCardapio/cardapio.png" />
+                                        </image>
+                                    </ImageView>
+                                </children>
+                            </Pane>
+                        </children>
+                    </HBox>
+                    <HBox fx:id="hBoxOpcoes" prefHeight="100.0" prefWidth="600.0">
+                        <children>
+                            <Pane fx:id="paneOpcoes" prefHeight="100.0" prefWidth="600.0" styleClass="paneOpcoes" stylesheets="@css/style.css">
+                                <children>
+                                    <Button fx:id="buttonHamb" alignment="CENTER" contentDisplay="TOP" layoutX="15.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="110.0" text="HAMBÚRGUERES">
+                                        <graphic>
+                                            <ImageView fitHeight="47.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensOpções/hamburguer.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                        <font>
+                                            <Font name="System Bold" size="11.0" />
+                                        </font>
+                                    </Button>
+                                    <Button fx:id="buttonBebida" alignment="CENTER" contentDisplay="TOP" layoutX="475.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="110.0" text="BEBIDAS">
+                                        <graphic>
+                                            <ImageView fitHeight="47.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensOpções/bebida.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                        <font>
+                                            <Font name="System Bold" size="11.0" />
+                                        </font>
+                                    </Button>
+                                    <Button fx:id="buttonPizza" alignment="CENTER" contentDisplay="TOP" layoutX="168.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="110.0" text="PIZZAS">
+                                        <graphic>
+                                            <ImageView fitHeight="47.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensOpções/pizza.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                        <font>
+                                            <Font name="System Bold" size="11.0" />
+                                        </font>
+                                    </Button>
+                                    <Button fx:id="buttonPastel" alignment="CENTER" contentDisplay="TOP" layoutX="321.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="110.0" text="PASTÉIS">
+                                        <graphic>
+                                            <ImageView fitHeight="47.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensOpções/pastel.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                        <font>
+                                            <Font name="System Bold" size="11.0" />
+                                        </font>
+                                    </Button>
+                                </children>
+                            </Pane>
+                        </children>
+                    </HBox>
+                    <VBox fx:id="vBoxHamb" prefHeight="350.0" prefWidth="600.0">
+                        <children>
+                            <HBox prefHeight="40.0" prefWidth="600.0">
+                                <children>
+                                    <Pane prefHeight="40.0" prefWidth="600.0">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="12.0" text="BURGUERS ARTESANAIS">
+                                                <font>
+                                                    <Font name="System Bold" size="13.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                            <HBox prefHeight="100.0" prefWidth="600.0">
+                                <children>
+                                    <Pane fx:id="paneSmashBurguer" prefHeight="100.0" prefWidth="600.0" styleClass="paneSmashBurguer" stylesheets="@css/style.css">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="6.0" text="SMASH BURGUER">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Label layoutX="20.0" layoutY="23.0" prefHeight="40.0" prefWidth="308.0" text="Pão Brioche, Carne Smash 80g, Ovo, Cheddar e Molho da Casa." wrapText="true" />
+                                            <ImageView fitHeight="80.0" fitWidth="110.0" layoutX="360.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensHamb/Hamburguer1-removebg-preview.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Label layoutX="20.0" layoutY="70.0" text="R$ 14,90" textFill="#1aff00">
+                                                <font>
+                                                    <Font name="Arial Black" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Button fx:id="buttonMaisSmash" layoutX="549.0" layoutY="37.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="34.0">
+                                                <graphic>
+                                                    <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Button fx:id="buttonMenosSmash" layoutX="477.0" layoutY="37.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0">
+                                                <graphic>
+                                                    <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Label fx:id="labelSmash" alignment="CENTER" contentDisplay="CENTER" layoutX="513.0" layoutY="43.0" prefHeight="17.0" prefWidth="36.0" />
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                            <HBox prefHeight="100.0" prefWidth="600.0">
+                                <children>
+                                    <Pane fx:id="paneSmashSalada" prefHeight="100.0" prefWidth="600.0" stylesheets="@css/style.css">
+                                        <children>
+                                            <Label layoutX="21.0" layoutY="6.0" text="SMASH SALADA">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Label layoutX="21.0" layoutY="25.0" prefHeight="40.0" prefWidth="308.0" text="Pão Brioche, Carne Smash 80g, Alface, Cebola Crocante, Tomate, Picles e Molho da Casa." wrapText="true" />
+                                            <Label layoutX="21.0" layoutY="70.0" text="R$ 17,90" textFill="#1aff00">
+                                                <font>
+                                                    <Font name="Arial Black" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <ImageView fitHeight="80.0" fitWidth="110.0" layoutX="360.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensHamb/Hamburguer3-removebg-preview.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Button fx:id="buttonMenosSalada" layoutX="477.0" layoutY="40.0" mnemonicParsing="false">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Button fx:id="buttonMaisSalada" layoutX="549.0" layoutY="40.0" mnemonicParsing="false">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Label fx:id="labelSalada" alignment="CENTER" contentDisplay="CENTER" layoutX="513.0" layoutY="45.0" prefHeight="17.0" prefWidth="36.0" />
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                            <HBox prefHeight="100.0" prefWidth="600.0">
+                                <children>
+                                    <Pane fx:id="paneSmashBacon" prefHeight="100.0" prefWidth="600.0" stylesheets="@css/style.css">
+                                        <children>
+                                            <Label layoutX="24.0" layoutY="6.0" text="SMASH BACON">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Label layoutX="24.0" layoutY="23.0" prefHeight="40.0" prefWidth="308.0" text="Pão Brioche, Carne Smash 80g, Bacon, Cheddar e Molho da Casa." wrapText="true" />
+                                            <Label layoutX="24.0" layoutY="69.0" text="R$ 16,90" textFill="#1aff00">
+                                                <font>
+                                                    <Font name="Arial Black" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <ImageView fitHeight="80.0" fitWidth="110.0" layoutX="358.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensHamb/Hamburguer2-removebg-preview.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Button fx:id="buttonMaisBacon" layoutX="549.0" layoutY="38.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="20.0">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Button fx:id="buttonMenosBacon" layoutX="477.0" layoutY="38.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="20.0">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Label fx:id="labelBacon" alignment="CENTER" contentDisplay="CENTER" layoutX="513.0" layoutY="43.0" prefHeight="17.0" prefWidth="36.0" />
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                    <VBox fx:id="vBoxPizza" prefHeight="350.0" prefWidth="600.0">
+                        <children>
+                            <HBox prefHeight="40.0" prefWidth="600.0">
+                                <children>
+                                    <Pane prefHeight="40.0" prefWidth="600.0">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="12.0" text="PIZZAS">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                            <HBox prefHeight="100.0" prefWidth="600.0" stylesheets="@css/style.css">
+                                <children>
+                                    <Pane fx:id="paneCalabresa" prefHeight="100.0" prefWidth="600.0">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="14.0" text="CALABRESA">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Label layoutX="20.0" layoutY="31.0" prefHeight="40.0" prefWidth="308.0" text="Molho, Mussarela, Calabresa, Tomate, Cebola, Azeitona e Orégano." wrapText="true" />
+                                            <ImageView fitHeight="80.0" fitWidth="110.0" layoutX="370.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensPizza/pizzaCalabresa-removebg-preview.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Button fx:id="buttonMaisCalabresa" layoutX="549.0" layoutY="37.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="20.0">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Button fx:id="buttonMenosCalabresa" layoutX="477.0" layoutY="37.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="20.0">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Label fx:id="labelCalabresa" alignment="CENTER" contentDisplay="CENTER" layoutX="513.0" layoutY="42.0" prefHeight="17.0" prefWidth="36.0" />
+                                            <CheckBox fx:id="checkBoxMediaCalabresa" layoutX="20.0" layoutY="71.0" mnemonicParsing="false" text="Média - R$ 35,00" />
+                                            <CheckBox fx:id="checkBoxFamiliaCalabresa" layoutX="137.0" layoutY="71.0" mnemonicParsing="false" text="Família - R$ 40,00" />
+                                            <CheckBox fx:id="checkBoxGiganteCalabresa" layoutX="260.0" layoutY="71.0" mnemonicParsing="false" text="Gigante - R$ 45,00" />
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                            <HBox prefHeight="100.0" prefWidth="600.0" stylesheets="@css/style.css">
+                                <children>
+                                    <Pane fx:id="paneFrango" prefHeight="100.0" prefWidth="600.0">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="14.0" text="FRANGO COM CATUPIRY">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Label layoutX="20.0" layoutY="31.0" prefHeight="40.0" prefWidth="308.0" text="Molho, Mussarela, Frango, Tomate, Catupiry e Orégano." wrapText="true" />
+                                            <ImageView fitHeight="79.0" fitWidth="117.0" layoutX="354.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensPizza/pizzaFrangoCatupiry-removebg-preview.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Button fx:id="buttonMaisFrangoCatupiry" layoutX="549.0" layoutY="37.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="20.0">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Button fx:id="buttonMenosFrangoCatupiry" layoutX="477.0" layoutY="37.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="20.0">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Label fx:id="labelFrangoCatupiry" alignment="CENTER" contentDisplay="CENTER" layoutX="513.0" layoutY="42.0" prefHeight="17.0" prefWidth="36.0" />
+                                            <CheckBox fx:id="checkBoxMediaCatupiry" layoutX="20.0" layoutY="71.0" mnemonicParsing="false" text="Média - R$ 35,00" />
+                                            <CheckBox fx:id="checkBoxFamiliaCatupiry" layoutX="137.0" layoutY="71.0" mnemonicParsing="false" text="Família - R$ 40,00" />
+                                            <CheckBox fx:id="checkBoxGiganteCatupiry" layoutX="260.0" layoutY="71.0" mnemonicParsing="false" text="Gigante - R$ 45,00" />
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                            <HBox layoutX="10.0" layoutY="50.0" prefHeight="100.0" prefWidth="600.0" stylesheets="@css/style.css">
+                                <children>
+                                    <Pane fx:id="panePepperoni" prefHeight="100.0" prefWidth="600.0">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="14.0" text="PEPPERONI">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Label layoutX="20.0" layoutY="31.0" prefHeight="40.0" prefWidth="308.0" text="Molho, Mussarela, Pepperoni e Orégano." wrapText="true" />
+                                            <ImageView fitHeight="80.0" fitWidth="97.0" layoutX="370.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensPizza/pizzaPepperoni.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Button fx:id="buttonMaisPepperoni" layoutX="549.0" layoutY="37.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="20.0">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Button fx:id="buttonMenosPepperoni" layoutX="477.0" layoutY="37.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="20.0">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Label fx:id="labelPepperoni" alignment="CENTER" contentDisplay="CENTER" layoutX="513.0" layoutY="42.0" prefHeight="17.0" prefWidth="36.0" />
+                                            <CheckBox fx:id="checkBoxMediaPepperoni" layoutX="20.0" layoutY="71.0" mnemonicParsing="false" text="Média - R$ 35,00" />
+                                            <CheckBox fx:id="checkBoxFamiliaPepperoni" layoutX="137.0" layoutY="71.0" mnemonicParsing="false" text="Família - R$ 40,00" />
+                                            <CheckBox fx:id="checkBoxGigantePepperoni" layoutX="260.0" layoutY="71.0" mnemonicParsing="false" text="Gigante - R$ 45,00" />
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                    <VBox fx:id="vBoxPastel" prefHeight="240.0" prefWidth="600.0">
+                        <children>
+                            <HBox prefHeight="40.0" prefWidth="600.0">
+                                <children>
+                                    <Pane prefHeight="40.0" prefWidth="600.0">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="12.0" text="PASTÉIS">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                            <HBox fx:id="hBoxPastelGeral" prefHeight="100.0" prefWidth="600.0">
+                                <children>
+                                    <Pane fx:id="panePastelFrango" prefHeight="100.0" prefWidth="300.0" stylesheets="@css/style.css">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="14.0" text="PASTEL DE FRANGO">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Label layoutX="20.0" layoutY="40.0" text="Frango Desfiado" />
+                                            <Label layoutX="20.0" layoutY="69.0" text="R$ 12,00" textFill="#1aff00">
+                                                <font>
+                                                    <Font name="Arial Black" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <ImageView fitHeight="60.0" fitWidth="110.0" layoutX="150.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensPastel/pastelFrango-removebg-preview.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Button fx:id="buttonMaisPastelFrango" layoutX="268.0" layoutY="40.0" mnemonicParsing="false">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Button fx:id="buttonMenosPastelFrango" layoutX="215.0" layoutY="40.0" mnemonicParsing="false">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Label fx:id="labelPastelFrango" alignment="CENTER" contentDisplay="CENTER" layoutX="248.0" layoutY="43.0" prefHeight="17.0" prefWidth="20.0" />
+                                        </children>
+                                    </Pane>
+                                    <Pane fx:id="panePastelCarne" prefHeight="100.0" prefWidth="300.0" stylesheets="@css/style.css">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="14.0" text="PASTEL DE CARNE">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Label layoutX="20.0" layoutY="40.0" text="Carne Moída" />
+                                            <Label layoutX="20.0" layoutY="69.0" text="R$ 12,00" textFill="#1aff00">
+                                                <font>
+                                                    <Font name="Arial Black" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <ImageView fitHeight="60.0" fitWidth="110.0" layoutX="125.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensPastel/pastelCarne-removebg-preview.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Button fx:id="buttonMaisPastelCarne" layoutX="268.0" layoutY="40.0" mnemonicParsing="false">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Button fx:id="buttonMenosPastelCarne" layoutX="215.0" layoutY="40.0" mnemonicParsing="false">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Label fx:id="labelPastelCarne" alignment="CENTER" contentDisplay="CENTER" layoutX="243.0" layoutY="43.0" prefHeight="17.0" prefWidth="24.0" />
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                            <HBox prefHeight="100.0" prefWidth="600.0">
+                                <children>
+                                    <Pane fx:id="panePastelAlgumaCoisa" prefHeight="100.0" prefWidth="300.0" stylesheets="@css/style.css">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="14.0" text="PASTEL DE CAMARÃO">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Label layoutX="20.0" layoutY="40.0" text="Camarão" />
+                                            <Label layoutX="20.0" layoutY="69.0" text="R$ 18,00" textFill="#1aff00">
+                                                <font>
+                                                    <Font name="Arial Black" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="130.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensPastel/pastelCamarao-removebg-preview.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Button fx:id="buttonMaisPastelCamarao" layoutX="268.0" layoutY="40.0" mnemonicParsing="false">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Button fx:id="buttonMenosPastelCamarao" layoutX="215.0" layoutY="40.0" mnemonicParsing="false">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Label fx:id="labelPastelCamarao" alignment="CENTER" contentDisplay="CENTER" layoutX="246.0" layoutY="42.0" prefHeight="17.0" prefWidth="22.0" />
+                                        </children>
+                                    </Pane>
+                                    <Pane fx:id="panePastel4" prefHeight="100.0" prefWidth="300.0" stylesheets="@css/style.css">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="14.0" text="PASTEL DE QUEIJO">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <Label layoutX="20.0" layoutY="40.0" text="Queijo e Milho" />
+                                            <Label layoutX="20.0" layoutY="69.0" text="R$ 12,00" textFill="#1aff00">
+                                                <font>
+                                                    <Font name="Arial Black" size="12.0" />
+                                                </font>
+                                            </Label>
+                                            <ImageView fitHeight="80.0" fitWidth="110.0" layoutX="127.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@imagensInicial/imagensPastel/pastelQueijo-removebg-preview.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Button fx:id="buttonMaisPastelQueijo" layoutX="268.0" layoutY="45.0" mnemonicParsing="false">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Button fx:id="buttonMenosPastelQueijo" layoutX="215.0" layoutY="45.0" mnemonicParsing="false">
+                                                <graphic>
+                                                    <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                </graphic>
+                                            </Button>
+                                            <Label fx:id="labelPastelQueijo" alignment="CENTER" contentDisplay="CENTER" layoutX="241.0" layoutY="47.0" prefHeight="17.0" prefWidth="28.0" />
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                    <VBox fx:id="vBoxBebidas" prefHeight="310.0" prefWidth="600.0">
+                        <children>
+                            <HBox prefHeight="40.0" prefWidth="600.0">
+                                <children>
+                                    <Pane prefHeight="40.0" prefWidth="600.0">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="12.0" text="BEBIDAS">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                            <HBox fx:id="hBoxBebidasGeral" prefHeight="134.0" prefWidth="600.0" stylesheets="@css/style.css">
+                                <children>
+                                    <Pane fx:id="paneBebidas1" prefHeight="142.0" prefWidth="600.0" stylesheets="@css/style.css">
+                                        <children>
+                                            <Label layoutX="20.0" layoutY="14.0" text="ÁGUAS">
+                                                <font>
+                                                    <Font name="System Bold" size="12.0" />
+                                                </font>
+                                            </Label>
+                                 <Label layoutX="20.0" layoutY="44.0" text="Água Mineral" />
+                                 <Label layoutX="20.0" layoutY="84.0" text="Água Com Gás" />
+                                 <Button fx:id="buttonMenosAguaMineral" layoutX="173.0" layoutY="37.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Button fx:id="buttonMaisAguaMineral" layoutX="240.0" layoutY="37.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Label fx:id="labelAguaMineral" alignment="CENTER" layoutX="204.0" layoutY="40.0" prefHeight="17.0" prefWidth="37.0" />
+                                 <Button fx:id="buttonMenosAguaComGas" layoutX="173.0" layoutY="75.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Button fx:id="buttonMaisAguaComGas" layoutX="240.0" layoutY="75.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Label fx:id="labelAguaComGas" alignment="CENTER" layoutX="204.0" layoutY="76.0" prefHeight="17.0" prefWidth="37.0" />
+                                 <Label layoutX="119.0" layoutY="44.0" text="R$ 2,00" />
+                                 <Label layoutX="119.0" layoutY="84.0" text="R$ 3,00" />
+                                 <Label layoutX="362.0" layoutY="14.0" text="REFRIGERANTE LATA">
+                                    <font>
+                                       <Font name="System Bold" size="12.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="362.0" layoutY="44.0" text="Coca-Cola" />
+                                 <Label layoutX="362.0" layoutY="84.0" text="Guaraná" />
+                                 <Label layoutX="443.0" layoutY="44.0" text="R$ 5,00" />
+                                 <Label layoutX="443.0" layoutY="85.0" text="R$ 4,50" />
+                                 <Button fx:id="buttonMenosCocaLata" layoutX="490.0" layoutY="41.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Label fx:id="labelCocaLata" alignment="CENTER" layoutX="521.0" layoutY="44.0" prefHeight="17.0" prefWidth="37.0" />
+                                 <Button fx:id="buttonMaisCocaLata" layoutX="558.0" layoutY="41.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Button fx:id="buttonMenosGuaranaLata" layoutX="490.0" layoutY="81.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Label fx:id="labelGuaranaLata" alignment="CENTER" layoutX="521.0" layoutY="84.0" prefHeight="17.0" prefWidth="37.0" />
+                                 <Button fx:id="buttonMaisGuaranaLata" layoutX="558.0" layoutY="81.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                     <HBox fx:id="hBoxBebidasGeral1" layoutX="10.0" layoutY="50.0" prefHeight="134.0" prefWidth="600.0" stylesheets="@css/style.css">
+                        <children>
+                           <Pane fx:id="paneBebidas2" prefHeight="142.0" prefWidth="600.0" stylesheets="@css/style.css">
+                              <children>
+                                 <Label layoutX="20.0" layoutY="14.0" text="REFRIGERANTE LITRO">
+                                    <font>
+                                       <Font name="System Bold" size="12.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="20.0" layoutY="44.0" text="Coca-Cola" />
+                                 <Label layoutX="20.0" layoutY="84.0" text="Guaraná" />
+                                 <Button fx:id="buttonMenosCocaLitro" layoutX="173.0" layoutY="37.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Button fx:id="buttonMaisCocaLitro" layoutX="240.0" layoutY="37.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Label fx:id="labelCocaLitro" alignment="CENTER" layoutX="204.0" layoutY="40.0" prefHeight="17.0" prefWidth="37.0" />
+                                 <Button fx:id="buttonMenosGuaranaLitro" layoutX="173.0" layoutY="75.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Button fx:id="buttonMaisGuaranaLitro" layoutX="240.0" layoutY="75.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Label fx:id="labelGuaranaLitro" alignment="CENTER" layoutX="204.0" layoutY="76.0" prefHeight="17.0" prefWidth="37.0" />
+                                 <Label layoutX="119.0" layoutY="44.0" text="R$ 10,00" />
+                                 <Label layoutX="119.0" layoutY="84.0" text="R$ 9,00" />
+                                 <Label layoutX="362.0" layoutY="14.0" text="REFRIGERANTE LATA">
+                                    <font>
+                                       <Font name="System Bold" size="12.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="362.0" layoutY="44.0" text="Suco Laranja" />
+                                 <Label layoutX="362.0" layoutY="84.0" text="Suco Goiaba" />
+                                 <Label layoutX="443.0" layoutY="44.0" text="R$ 5,00" />
+                                 <Label layoutX="443.0" layoutY="85.0" text="R$ 5,00" />
+                                 <Button fx:id="buttonMenosSucoLaranja" layoutX="490.0" layoutY="41.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Label fx:id="labelSucoLaranja" alignment="CENTER" layoutX="521.0" layoutY="44.0" prefHeight="17.0" prefWidth="37.0" />
+                                 <Button fx:id="buttonMaisSucoLaranja" layoutX="558.0" layoutY="41.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Button fx:id="buttonMenosSucoGoiaba" layoutX="490.0" layoutY="81.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/--removebg-preview.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Label fx:id="labelSucoGoiaba" alignment="CENTER" layoutX="521.0" layoutY="84.0" prefHeight="17.0" prefWidth="37.0" />
+                                 <Button fx:id="buttonMaisSucoGoiaba" layoutX="558.0" layoutY="81.0" mnemonicParsing="false">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@imagensInicial/imagensMaisMenos/+++.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                              </children>
+                           </Pane>
+                        </children>
+                     </HBox>
+                        </children>
+                    </VBox>
+                </children>
+            </VBox>
+        </ScrollPane>
+        <HBox prefHeight="70.0" prefWidth="615.0" VBox.vgrow="ALWAYS">
+            <children>
+                <AnchorPane prefHeight="70.0" prefWidth="600.0">
+                    <children>
+                        <Label layoutX="14.0" layoutY="22.0" text="Total -  R$">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="buttonCarrinho" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="503.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="94.0" text="Ver Carrinho">
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@imagensInicial/imagensCarrinho/carrinhoSuper-removebg-preview.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Label fx:id="labelTotal" layoutX="85.0" layoutY="22.0">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</VBox>
