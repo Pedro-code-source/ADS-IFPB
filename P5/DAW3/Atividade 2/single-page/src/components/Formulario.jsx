@@ -8,7 +8,7 @@ export default function Form(){
     const [confirmacao, setConfirmacao] = useState(false);
 
     return (
-        <div>
+        <div className="form">
 
             <h2>Entre em contato</h2>
             <input id="nome" type="text" placeholder="Nome do Aluno" value={nome} onChange={e => {setNome(e.target.value)}}/>
@@ -19,7 +19,7 @@ export default function Form(){
                 setConfirmacao(true)
             }}>Enviar</button>
             {confirmacao && (
-                <div>
+                <div className="modal">
 
                     <h2> Mensagem Enviada ✅</h2>
                     <p>Nome: {nome}</p>

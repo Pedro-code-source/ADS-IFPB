@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import "./App.css"
 import Inicio from './components/Inicio';
 import Prof1 from './components/Prof1';
 import Prof2 from './components/Prof2';
@@ -10,37 +11,23 @@ function App() {
 
   return (
 
-    <div>
+     <div className="container">
 
-      <ul>
+      <nav>
+  <button onClick={() => setPagina("inicio")}>Início</button>
+  <button onClick={() => setPagina("prof1")}>Professor 1</button>
+  <button onClick={() => setPagina("prof2")}>Professor 2</button>
+  <button onClick={() => setPagina("prof3")}>Professor 3</button>
+      </nav>
 
-        <button onClick={e => {
-          e.preventDefault()
-          setPagina("inicio")
-        }}><li>Início</li></button>
+     
+  {pagina === 'inicio' && <Inicio />}
+  {pagina === 'prof1' && (<><Prof1 /><Form /></>)}
+  {pagina === 'prof2' && (<><Prof2 /><Form /></>)}
+  {pagina === 'prof3' && (<><Prof3 /><Form /></>)}
+</div>
 
-        <button onClick={e => {
-          e.preventDefault()
-          setPagina("prof1")
-        }}><li>Professor 1</li></button>
-
-        <button onClick={e => {
-          e.preventDefault()
-          setPagina("prof2")
-        }}><li>Professor 2</li></button>
-        
-        <button onClick={e => {
-          e.preventDefault()
-          setPagina("prof3")
-        }}><li>Professor 3</li></button>
-        
-      </ul>
-          {pagina === 'inicio' && <Inicio/>}
-          {pagina === 'prof1' && (<><Prof1/> <Form/></>)}
-          {pagina === 'prof2' && (<><Prof2/> <Form/></>)}
-          {pagina === 'prof3' && (<><Prof3/> <Form/></>)}
-
-    </div>
+    
   )
 }
 

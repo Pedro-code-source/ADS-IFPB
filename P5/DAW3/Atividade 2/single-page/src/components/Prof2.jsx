@@ -1,35 +1,39 @@
 import React from "react";
+import "../App.css"
 
-export default function Prof2(){
+export default function Prof2() {
     return (
 
-        <div>
+        <div className="card-prof">
 
             <h1>
                 Professor Hugo
             </h1>
 
-            <table>
+            <table className="table-prof">
 
-                <th>Carga horária</th>
+                <thead>
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>Curso</th>
+                        <th>Período</th>
+                    </tr>
+                </thead>
+
                 <tbody>
-                <tr>
-                    <td>Disciplina</td>
-                    <td>Curso</td>
-                    <td>Período</td>
-                </tr>
 
-                <tr>
-                    <td>Bancos de Dados 1</td>
-                    <td>ADS</td>
-                    <td>3</td>
-                </tr>
 
-                <tr>
-                    <td>Bancos de Dados 2</td>
-                    <td>ADS</td>
-                    <td>4°</td>
-                </tr>
+                    <tr>
+                        <td>Bancos de Dados 1</td>
+                        <td>ADS</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bancos de Dados 2</td>
+                        <td>ADS</td>
+                        <td>4°</td>
+                    </tr>
                 </tbody>
             </table>
 
